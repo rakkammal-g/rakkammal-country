@@ -1,0 +1,20 @@
+    <div class="country-list-container">
+        <div class="right-wrapper">
+            <div class="input-group">
+                <div class="form-outline">
+                  <input type="search" id="form1" class="form-control" (keyup)="getSearchedCountryList($event)"/>
+                  <label class="form-label" for="form1">Search</label>
+                </div>
+              </div>
+        
+            <ul *ngFor="let country of list">
+                <li (click)="getClickedCountry(country.country.country_name)">{{country.country.country_name}}</li>
+            </ul>
+        </div>
+        <div class="left-wrapper" *ngIf="state_list_length > 0">
+            <img src={{flag_list}}/>
+          <ul *ngFor="let state of state_list;">
+              <li>{{state.name}}</li>
+          </ul>
+        </div>
+    </div>

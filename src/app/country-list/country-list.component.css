@@ -1,0 +1,20 @@
+.right-wrapper {
+    float: left;
+    margin:40px;
+}
+
+.left-wrapper {
+    float: right;
+    margin:40px;
+}
+
+img {
+    height: 34px;
+    width: 34px;
+    margin-bottom: 22px;
+    margin-top: 20px;
+}
+
+.country-list-container {
+    display: flex;
+}
